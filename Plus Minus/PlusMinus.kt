@@ -1,25 +1,19 @@
 fun plusMinus(arr: Array<Int>): Unit {
     var positiveNumbers = 0.0
     var negativeNumbers = 0.0
-    var zeros = 0.0
-    val size = arr.size
+    var zeroCount = 0.0
 
-    for (element in arr) {
+    for (i in arr.indices) {
         when {
-            element > 0 -> {
-                positiveNumbers++
-            }
-            element < 0 -> {
-                negativeNumbers++
-            }
-            else -> {
-                zeros++
-            }
+            arr[i] > 0 -> positiveNumbers++
+            arr[i] < 0 -> negativeNumbers++
+            else -> zeroCount++
         }
     }
-    println(String.format("%.6f", positiveNumbers / size))
-    println(String.format("%.6f", negativeNumbers / size))
-    println(String.format("%.6f", zeros / size))
+
+    println(String.format("%.6f", positiveNumbers / arr.size))
+    println(String.format("%.6f", negativeNumbers / arr.size))
+    println(String.format("%.6f", zeroCount / arr.size))
 }
 
 fun main(args: Array<String>) {
