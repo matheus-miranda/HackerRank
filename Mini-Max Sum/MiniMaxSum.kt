@@ -1,6 +1,7 @@
 fun miniMaxSum(arr: Array<Int>) {
-    val minSum = arr.sorted().dropLast(1).map { it.toLong() }.sum()
-    val maxSum = arr.sorted().drop(1).map { it.toLong() }.sum()
+    val sortedList = arr.sorted().map { it.toLong() }
+    val minSum = sortedList.dropLast(1).sum()
+    val maxSum = sortedList.drop(1).sum()
     println("$minSum $maxSum")
 }
 
