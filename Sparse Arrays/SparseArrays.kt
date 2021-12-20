@@ -1,17 +1,5 @@
 fun matchingStrings(strings: Array<String>, queries: Array<String>): Array<Int> {
-    val result = arrayListOf<Int>()
-
-    for (i in queries.indices) {
-        var counter = 0
-        strings.forEach {
-            if (queries[i] == it) {
-                counter++
-            }
-        }
-        result.add(i, counter)
-    }
-
-    return result.toTypedArray()
+    return queries.map { query -> strings.count { string -> string == query } }.toTypedArray()
 }
 
 fun main(args: Array<String>) {
