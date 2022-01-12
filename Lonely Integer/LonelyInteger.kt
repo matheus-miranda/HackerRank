@@ -1,5 +1,4 @@
-fun lonelyinteger(a: Array<Int>) =
-    a.toList().groupingBy { it }.eachCount().filter { it.value < 2 }.keys.first()
+fun lonelyinteger(a: Array<Int>) = a.filter { element -> a.count { it == element } == 1 }.first()
 
 fun main(args: Array<String>) {
     val n = readLine()!!.trim().toInt()
