@@ -10,3 +10,4 @@ HackerRank coding challenges
 - <a href="https://github.com/matheus-miranda/HackerRank/tree/master/Sparse%20Arrays">Sparse Arrays</a>
 - <a href="https://github.com/matheus-miranda/HackerRank/tree/master/Lonely%20Integer">Lonely Integer</a>
 - <a href="https://github.com/matheus-miranda/HackerRank/tree/master/Grading%20Students">Grading Students</a>
+- <a href="https://github.com/matheus-miranda/HackerRank/tree/master/Compare%20the%20Triplets">Compare the Triplets</a>
